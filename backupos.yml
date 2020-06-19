@@ -1,0 +1,6 @@
+---
+- name: Backup OS
+  hosts: all
+  tasks:
+    - name: Rear backup Linux
+      shell: rear -d -v mkbackup

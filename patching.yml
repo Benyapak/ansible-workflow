@@ -1,0 +1,11 @@
+---
+- name: Patching
+  hosts: all
+  tasks:
+    - name: update CVE
+      shell: yum update --cve CVE-2019-3820 -y
+      register: output
+    - name: verify cve
+      debug:
+        msg: "Not Patch"
+      when: "'Resolving Dependencies' in output.stdout"

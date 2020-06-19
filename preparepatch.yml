@@ -1,0 +1,6 @@
+---
+- name: Prepare Patch
+  hosts: all
+  tasks:
+    - name: Copy file patch
+      msg: copy file from nfs

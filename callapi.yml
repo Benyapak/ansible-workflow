@@ -1,0 +1,6 @@
+---
+- name: Call API
+  hosts: all
+  tasks:
+    - name: Call VA Scan
+      msg: Scan Vul.
