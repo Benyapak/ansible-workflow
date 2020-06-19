@@ -3,4 +3,5 @@
   hosts: all
   tasks:
     - name: Copy file patch
-      msg: copy file from nfs
+      debug:
+        msg: copy file from nfs

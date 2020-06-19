@@ -3,4 +3,5 @@
   hosts: all
   tasks:
     - name: Call VA Scan
-      msg: Scan Vul.
+      debug:
+        msg: Scan Vul.
